@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes karim {
+  0% {
+    background-color: pink;
+    top: 200px;
+    left: 10%;
+  }
+  10% {
+    background-color: hotpink;
+    top: 250px;
+    left: 15%;
+  }
+  20% {
+    background-color: palevioletred;
+    top: 300px;
+    left: 25%;
+  }
+  50% {
+    background-color: lightcoral;
+    top: 40%;
+    left: 35%;
+  }
+  70% {
+    background-color: coral;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    background-color: crimson;
+    top: calc(50% - 125px);
+    left: calc(50% - 200px);
+  }
+}
+div.test {
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  animation-name: karim;
+  animation-duration: 10s;
+  background-color: crimson;
+  top: calc(50% - 125px);
+  left: calc(50% - 200px);
+}
